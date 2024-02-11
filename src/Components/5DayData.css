@@ -1,0 +1,27 @@
+.last-five-days-container {
+  margin-top: 20px;
+}
+
+.weather-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.weather-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.weather-item p {
+  margin: 0;
+}
+
+.weather-item p:first-child {
+  font-weight: bold;
+}
+
+.weather-item p:not(:first-child) {
+  margin-top: 10px;
+}

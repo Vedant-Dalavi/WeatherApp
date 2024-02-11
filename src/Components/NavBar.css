@@ -1,0 +1,42 @@
+/* Navigation bar container */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Customize the background color */
+  z-index: 1000; /* Ensure the navbar appears above other content */
+}
+
+.content {
+  margin-top: 50px; /* Adjust this value to match the height of your navbar */
+}
+
+/* Navigation bar links */
+.navbar a {
+  float: left; /* Float the links to the left */
+  display: block; /* Display the links as block elements */
+  color: white; /* Text color */
+  text-align: center; /* Center-align the text */
+  padding: 14px 20px; /* Padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Change the color of the links on hover */
+.navbar a:hover {
+  background-color: #ddd; /* Background color on hover */
+  color: black; /* Text color on hover */
+}
+
+/* Active link */
+.navbar a.active {
+  background-color: #555; /* Background color for the active link */
+}
+
+/* Clear floats after the navigation bar */
+.navbar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
